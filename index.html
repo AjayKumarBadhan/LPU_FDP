@@ -15,78 +15,141 @@
 
         header {
             background: #ff6b6b;
-            padding: 20px;
+            padding: 30px;
             text-align: center;
             color: #fff;
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 3rem;
         }
 
         header p {
-            margin: 5px 0 0;
-            font-size: 1.2rem;
+            margin-top: 10px;
+            font-size: 1.4rem;
+        }
+
+        nav {
+            background: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
         }
 
         .hero {
             text-align: center;
-            padding: 50px 20px;
+            padding: 60px 20px;
         }
 
         .hero img {
-            width: 300px;
+            width: 350px;
             border-radius: 20px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
         .hero h2 {
-            margin-top: 20px;
-            font-size: 2rem;
+            margin-top: 25px;
+            font-size: 2.5rem;
         }
 
         .hero p {
-            font-size: 1rem;
-            max-width: 600px;
-            margin: 10px auto 0;
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 15px auto 0;
         }
 
         .features {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 40px 20px;
+            gap: 25px;
+            padding: 50px 20px;
         }
 
         .card {
             background: #fff;
             border-radius: 15px;
-            padding: 20px;
+            padding: 25px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
             text-align: center;
         }
 
         .card img {
-            width: 80px;
+            width: 70px;
             margin-bottom: 15px;
         }
 
         .card h3 {
-            margin-bottom: 10px;
-            font-size: 1.4rem;
+            margin-bottom: 12px;
+            font-size: 1.6rem;
         }
 
         .card p {
-            font-size: 0.95rem;
+            font-size: 1rem;
             color: #555;
+        }
+
+        .about {
+            background: #f9f9f9;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .contact {
+            background: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+
+        .contact button {
+            background: #ff6b6b;
+            color: #fff;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .contact button:hover {
+            background: #e85c5c;
         }
 
         footer {
             background: #333;
             color: #fff;
             text-align: center;
-            padding: 15px;
+            padding: 20px;
             font-size: 0.9rem;
         }
 
@@ -96,35 +159,57 @@
 
     <header>
         <h1>Lovely Professional University</h1>
-        <p>Punjab, India</p>
+        <p>Punjab, India - Transforming Education for the Future</p>
     </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
     <section class="hero">
         <img src="https://www.lpu.in/images/banner-6.jpg" alt="LPU Campus">
-        <h2>Empowering Young Minds</h2>
-        <p>LPU is India's largest and best private university offering a diverse range of programs, state-of-the-art facilities, and an inclusive learning environment.</p>
+        <h2>Empowering Young Minds for Global Success</h2>
+        <p>At Lovely Professional University, we believe in nurturing talent, encouraging innovation, and building leaders of tomorrow. Join us in creating a brighter future with endless possibilities.</p>
     </section>
 
-    <section class="features">
+    <section id="features" class="features">
         <div class="card">
             <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Academics">
             <h3>World-Class Academics</h3>
-            <p>Offering over 200 programs across various disciplines with cutting-edge curriculum and global exposure.</p>
+            <p>With 200+ programs across disciplines, our globally benchmarked curriculum ensures holistic education that meets industry needs.</p>
         </div>
         <div class="card">
             <img src="https://cdn-icons-png.flaticon.com/512/929/929566.png" alt="Infrastructure">
-            <h3>State-of-the-Art Campus</h3>
-            <p>Spread over 600 acres with modern labs, digital libraries, sports arenas, and eco-friendly infrastructure.</p>
+            <h3>Innovative Infrastructure</h3>
+            <p>Spread over 600 acres, LPU boasts smart classrooms, modern labs, tech parks, and sports complexes creating a vibrant learning ecosystem.</p>
         </div>
         <div class="card">
             <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Placements">
             <h3>Global Placements</h3>
-            <p>Top recruiters from around the world hire from LPU, making it one of the most sought-after universities.</p>
+            <p>We are proud to have top recruiters like Amazon, Google, Microsoft and more offering dream jobs to our students every year.</p>
+        </div>
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/2717/2717504.png" alt="Research">
+            <h3>Research & Innovation</h3>
+            <p>LPU promotes a research-driven culture with state-of-the-art labs, incubators, and funding for innovative ideas and startups.</p>
         </div>
     </section>
 
+    <section id="about" class="about">
+        <h2>About LPU</h2>
+        <p>Lovely Professional University (LPU) is a premier institution recognized globally for its excellence in education, cutting-edge research, and industry-aligned programs. With students from over 50 countries, LPU provides a multicultural learning environment fostering diversity, inclusivity, and global citizenship. Our mission is to equip students with practical skills, critical thinking, and ethical values to succeed in a fast-changing world.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Ready to shape your future with LPU? Get in touch with our admissions team to learn more about our programs, scholarships, and campus life.</p>
+        <button onclick="window.location.href='https://www.lpu.in/contact-us.php'">Get in Touch</button>
+    </section>
+
     <footer>
-        &copy; 2025 Lovely Professional University | Designed with ❤️
+        &copy; 2025 Lovely Professional University | Designed with ❤️ for Future Leaders
     </footer>
 
 </body>
